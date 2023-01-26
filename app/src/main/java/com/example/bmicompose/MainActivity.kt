@@ -136,7 +136,10 @@ fun Greeting(name: String) {
                 )
 
                 Button(
-                    onClick = { /*TODO*/ },
+                    onClick = {
+                        textState.value = ""
+                        nameText.value = ""
+                    },
                     modifier = Modifier.fillMaxWidth()
                 ) {
                     Row(
